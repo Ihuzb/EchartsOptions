@@ -3,6 +3,7 @@
   "displayName": "EchartsOptions",
   "description": "",
   "version": "0.0.1",
+  "publisher": "ihuzb",
   "engines": {
     "vscode": "^1.79.0"
   },
