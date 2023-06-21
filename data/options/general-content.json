@@ -1,0 +1,206 @@
+{
+    "title": {
+        "desc": "标题组件，包含主标题和副标题"
+    },
+    "legend": {
+        "desc": "图例组件"
+    },
+    "grid": {
+        "desc": "直角坐标系内绘图网格，单个 grid 内最多可以放置上下两个 X 轴，左右两个 Y 轴。可以在网格上绘制折线图,柱状图,散点图（气泡图）"
+    },
+    "xAxis": {
+        "desc": "直角坐标系 grid 中的 x 轴"
+    },
+    "yAxis": {
+        "desc": "直角坐标系 grid 中的 y 轴"
+    },
+    "polar": {
+        "desc": "极坐标系，可以用于散点图和折线图"
+    },
+    "radiusAxis": {
+        "desc": "极坐标系的径向轴"
+    },
+    "angleAxis": {
+        "desc": "极坐标系的角度轴"
+    },
+    "radar": {
+        "desc": "雷达图坐标系组件，只适用于雷达图"
+    },
+    "dataZoom": {
+        "desc": "dataZoom组件用于区域缩放"
+    },
+    "dataZoom-inside": {
+        "desc": "内置型数据区域缩放组件"
+    },
+    "dataZoom-slider": {
+        "desc": "滑动条型数据区域缩放组件"
+    },
+    "visualMap": {
+        "desc": "视觉映射组件，用于进行『视觉编码』，也就是将数据映射到视觉元素（视觉通道）"
+    },
+    "visualMap-continuous": {
+        "desc": "连续型视觉映射组件"
+    },
+    "visualMap-piecewise": {
+        "desc": "分段型视觉映射组件"
+    },
+    "tooltip": {
+        "desc": "提示框组件"
+    },
+    "axisPointer": {
+        "desc": "这是坐标轴指示器（axisPointer）的全局公用设置"
+    },
+    "toolbox": {
+        "desc": "工具栏"
+    },
+    "brush": {
+        "desc": "区域选择组件"
+    },
+    "geo": {
+        "desc": "地理坐标系组件"
+    },
+    "parallel": {
+        "desc": "平行坐标系介绍"
+    },
+    "parallelAxis": {
+        "desc": "平行坐标系中的坐标轴"
+    },
+    "singleAxis": {
+        "desc": "单轴"
+    },
+    "timeline": {
+        "desc": "在多个ECharts option间进行切换、播放等操作的功能"
+    },
+    "graphic": {
+        "desc": "原生图形元素组件"
+    },
+    "calendar": {
+        "desc": "日历坐标系组件"
+    },
+    "dataset": {
+        "desc": "数据集"
+    },
+    "aria": {
+        "desc": "W3C制定了无障碍富互联网应用规范集"
+    },
+    "series-line": {
+        "desc": "折线/面积图折线图"
+    },
+    "series-bar": {
+        "desc": "热力图"
+    },
+    "series-pie": {
+        "desc": "饼图"
+    },
+    "series-scatter": {
+        "desc": "散点（气泡）图"
+    },
+    "series-effectScatter": {
+        "desc": "带有涟漪特效动画的散点（气泡）图"
+    },
+    "series-radar": {
+        "desc": "雷达图"
+    },
+    "series-tree": {
+        "desc": "树图"
+    },
+    "series-treemap": {
+        "desc": "层级数据/树状数据"
+    },
+    "series-sunburst": {
+        "desc": "旭日图"
+    },
+    "series-boxplot": {
+        "desc": "箱形图"
+    },
+    "series-candlestick": {
+        "desc": "K线图"
+    },
+    "series-heatmap": {
+        "desc": "热力图"
+    },
+    "series-map": {
+        "desc": "地图"
+    },
+    "series-parallel": {
+        "desc": "平行坐标系的系列"
+    },
+    "series-lines": {
+        "desc": "路径图"
+    },
+    "series-graph": {
+        "desc": "关系图"
+    },
+    "series-sankey": {
+        "desc": "桑基图"
+    },
+    "series-funnel": {
+        "desc": "漏斗图"
+    },
+    "series-gauge": {
+        "desc": "仪表盘"
+    },
+    "series-pictorialBar": {
+        "desc": "象形柱图"
+    },
+    "series-themeRiver": {
+        "desc": "主题河流"
+    },
+    "series-custom": {
+        "desc": "自定义系列可以自定义系列中的图形元素渲染"
+    },
+    "darkMode": {
+        "desc": "是否是暗黑模式，默认会根据背景色backgroundColor的亮度自动设置"
+    },
+    "color": {
+        "desc": "调色盘颜色列表。如果系列没有设置颜色，则会依次循环从该列表中取颜色作为系列颜色"
+    },
+    "backgroundColor": {
+        "desc": "背景色，默认无背景"
+    },
+    "textStyle": {
+        "desc": "全局的字体样式"
+    },
+    "animation": {
+        "desc": "是否开启动画"
+    },
+    "animationThreshold": {
+        "desc": "是否开启动画的阈值，当单个系列显示的图形数量大于这个阈值时会关闭动画"
+    },
+    "animationDuration": {
+        "desc": "初始动画的时长"
+    },
+    "animationEasing": {
+        "desc": "初始动画的缓动效果"
+    },
+    "animationDelay": {
+        "desc": "初始动画的延迟"
+    },
+    "animationDurationUpdate": {
+        "desc": "数据更新动画的时长"
+    },
+    "animationEasingUpdate": {
+        "desc": "数据更新动画的缓动效果"
+    },
+    "animationDelayUpdate": {
+        "desc": "数据更新动画的延迟"
+    },
+    "stateAnimation": {
+        "desc": "状态切换的动画配置，支持在每个系列里设置单独针对该系列的配置。"
+    },
+    "blendMode": {
+        "desc": "图形的混合模式"
+    },
+    "hoverLayerThreshold": {
+        "desc": "图形数量阈值，决定是否开启单独的hover层，在整个图表的图形数量大于该阈值时开启单独的hover层"
+    },
+    "useUTC": {
+        "desc": "是否使用 UTC 时间"
+    },
+    "options": {
+        "desc": "用于timeline的option数组"
+    },
+    "media": {
+        "desc": "移动端自适应"
+    }
+}

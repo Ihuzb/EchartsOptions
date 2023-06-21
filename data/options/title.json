@@ -1,0 +1,890 @@
+{
+    "id": {
+        "desc": "组件ID"
+    },
+    "show": {
+        "desc": "是否显示标题组件",
+        "uiControl": {
+            "type": "boolean",
+            "default": "true"
+        }
+    },
+    "text": {
+        "desc": "主标题文本，支持使用\\n换行",
+        "uiControl": {
+            "type": "text"
+        }
+    },
+    "link": {
+        "desc": "主标题文本超链接。"
+    },
+    "target": {
+        "desc": "指定窗口打开主标题超链接"
+    },
+    "textStyle.color": {
+        "desc": "主标题文字的颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "'#333'"
+        }
+    },
+    "textStyle.fontStyle": {
+        "desc": "主标题文字字体的风格",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,italic,oblique"
+        }
+    },
+    "textStyle.fontWeight": {
+        "desc": "主标题文字字体的粗细",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,bold,bolder,lighter"
+        }
+    },
+    "textStyle.fontFamily": {
+        "desc": "主标题文字的字体系列",
+        "uiControl": {
+            "type": "enum",
+            "default": "sans-serif",
+            "options": "sans-serif,serif,monospace,Arial,Courier New"
+        }
+    },
+    "textStyle.fontSize": {
+        "desc": "主标题文字的字体大小。",
+        "uiControl": {
+            "type": "number",
+            "default": "18",
+            "min": "1",
+            "step": "1"
+        }
+    },
+    "textStyle.lineHeight": {
+        "desc": "行高",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "12"
+        }
+    },
+    "textStyle.width": {
+        "desc": "文本显示宽度。",
+        "uiControl": {
+            "type": "number",
+            "default": "100",
+            "min": "1",
+            "max": "500",
+            "step": "1"
+        }
+    },
+    "textStyle.height": {
+        "desc": "文本显示高度。",
+        "uiControl": {
+            "type": "number",
+            "default": "50",
+            "min": "1",
+            "max": "500",
+            "step": "1"
+        }
+    },
+    "textStyle.textBorderColor": {
+        "desc": "文字本身的描边颜色。",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "textStyle.textBorderWidth": {
+        "desc": "文字本身的描边宽度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "textStyle.textBorderType": {
+        "desc": "文字本身的描边类型",
+        "uiControl": {
+            "type": "enum",
+            "default": "solid",
+            "options": "solid,dashed,dotted"
+        }
+    },
+    "textStyle.textBorderDashOffset": {
+        "desc": "用于设置虚线的偏移量，指定 dash array 实现灵活的虚线效果",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "0"
+        }
+    },
+    "textStyle.textShadowColor": {
+        "desc": "文字本身的阴影颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "#000"
+        }
+    },
+    "textStyle.textShadowBlur": {
+        "desc": "文字本身的阴影长度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "textStyle.textShadowOffsetX": {
+        "desc": "文字本身的阴影 X 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "textStyle.textShadowOffsetY": {
+        "desc": "文字本身的阴影 Y 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "textStyle.overflow": {
+        "desc": "文字超出宽度是否截断或者换行",
+        "uiControl": {
+            "type": "enum",
+            "options": "truncate,break,breakAll"
+        }
+    },
+    "textStyle.ellipsis": {
+        "desc": "overflow:truncate时候，可以通过该属性配置末尾显示的文本。"
+    },
+    "textStyle.rich": {
+        "desc": "在rich里面，可以自定义富文本样式"
+    },
+    "textStyle.rich.<style_name>.color": {
+        "desc": "文字的颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "null"
+        }
+    },
+    "textStyle.rich.<style_name>.fontStyle": {
+        "desc": "文字字体的风格",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,italic,oblique"
+        }
+    },
+    "textStyle.rich.<style_name>.fontWeight": {
+        "desc": "文字字体的粗细",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,bold,bolder,lighter"
+        }
+    },
+    "textStyle.rich.<style_name>.fontFamily": {
+        "desc": "文字的字体系列",
+        "uiControl": {
+            "type": "enum",
+            "default": "sans-serif",
+            "options": "sans-serif,serif,monospace,Arial,Courier New"
+        }
+    },
+    "textStyle.rich.<style_name>.fontSize": {
+        "desc": "文字的字体大小。",
+        "uiControl": {
+            "type": "number",
+            "default": "12",
+            "min": "1",
+            "step": "1"
+        }
+    },
+    "textStyle.rich.<style_name>.align": {
+        "desc": "文字水平对齐方式，默认自动",
+        "uiControl": {
+            "type": "enum",
+            "options": "left,center,right"
+        }
+    },
+    "textStyle.rich.<style_name>.verticalAlign": {
+        "desc": "文字垂直对齐方式，默认自动",
+        "uiControl": {
+            "type": "enum",
+            "options": "top,middle,bottom"
+        }
+    },
+    "textStyle.rich.<style_name>.lineHeight": {
+        "desc": "行高",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "12"
+        }
+    },
+    "textStyle.rich.<style_name>.backgroundColor": {
+        "desc": "文字块背景色",
+        "uiControl": {
+            "type": "color",
+            "default": "#fff"
+        }
+    },
+    "textStyle.rich.<style_name>.borderColor": {
+        "desc": "文字块边框颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "#fff"
+        }
+    },
+    "textStyle.rich.<style_name>.borderWidth": {
+        "desc": "文字块边框宽度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.borderType": {
+        "desc": "文字块边框描边类型",
+        "uiControl": {
+            "type": "enum",
+            "default": "solid",
+            "options": "solid,dashed,dotted"
+        }
+    },
+    "textStyle.rich.<style_name>.borderDashOffset": {
+        "desc": "用于设置虚线的偏移量，可搭配borderType指定 dash array 实现灵活的虚线效果",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "0"
+        }
+    },
+    "textStyle.rich.<style_name>.borderRadius": {
+        "desc": "文字块的圆角。",
+        "uiControl": {
+            "type": "vector",
+            "min": "0",
+            "dims": "LT,RT, RB, LB"
+        }
+    },
+    "textStyle.rich.<style_name>.padding": {
+        "desc": "文字块的内边距",
+        "uiControl": {
+            "type": "vector",
+            "min": "0",
+            "dims": "T,R,B,L"
+        }
+    },
+    "textStyle.rich.<style_name>.shadowColor": {
+        "desc": "文字块的背景阴影颜色。",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "textStyle.rich.<style_name>.shadowBlur": {
+        "desc": "文字块的背景阴影长度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.shadowOffsetX": {
+        "desc": "文字块的背景阴影 X 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.shadowOffsetY": {
+        "desc": "文字块的背景阴影 Y 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.width": {
+        "desc": "文字块的宽度"
+    },
+    "textStyle.rich.<style_name>.height": {
+        "desc": "文字块的高度"
+    },
+    "textStyle.rich.<style_name>.textBorderColor": {
+        "desc": "文字本身的描边颜色。",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "textStyle.rich.<style_name>.textBorderWidth": {
+        "desc": "文字本身的描边宽度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.textBorderType": {
+        "desc": "文字本身的描边类型",
+        "uiControl": {
+            "type": "enum",
+            "default": "solid",
+            "options": "solid,dashed,dotted"
+        }
+    },
+    "textStyle.rich.<style_name>.textBorderDashOffset": {
+        "desc": "用于设置虚线的偏移量，可搭配textBorderType指定 dash array 实现灵活的虚线效果",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "0"
+        }
+    },
+    "textStyle.rich.<style_name>.textShadowColor": {
+        "desc": "文字本身的阴影颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "#000"
+        }
+    },
+    "textStyle.rich.<style_name>.textShadowBlur": {
+        "desc": "文字本身的阴影长度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.textShadowOffsetX": {
+        "desc": "文字本身的阴影 X 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "textStyle.rich.<style_name>.textShadowOffsetY": {
+        "desc": "文字本身的阴影 Y 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "subtext": {
+        "desc": "副标题文本，支持使用\\n换行。",
+        "uiControl": {
+            "type": "text"
+        }
+    },
+    "sublink": {
+        "desc": "副标题文本超链接。"
+    },
+    "subtarget": {
+        "desc": "指定窗口打开副标题超链接"
+    },
+    "subtextStyle.color": {
+        "desc": "副标题文字的颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "'#aaa'"
+        }
+    },
+    "subtextStyle.fontStyle": {
+        "desc": "副标题文字字体的风格",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,italic,oblique"
+        }
+    },
+    "subtextStyle.fontWeight": {
+        "desc": "副标题文字字体的粗细",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,bold,bolder,lighter"
+        }
+    },
+    "subtextStyle.fontFamily": {
+        "desc": "副标题文字的字体系列",
+        "uiControl": {
+            "type": "enum",
+            "default": "sans-serif",
+            "options": "sans-serif,serif,monospace,Arial,Courier New"
+        }
+    },
+    "subtextStyle.fontSize": {
+        "desc": "副标题文字的字体大小。",
+        "uiControl": {
+            "type": "number",
+            "default": "12",
+            "min": "1",
+            "step": "1"
+        }
+    },
+    "subtextStyle.align": {
+        "desc": "文字水平对齐方式，默认自动",
+        "uiControl": {
+            "type": "enum",
+            "options": "left,center,right"
+        }
+    },
+    "subtextStyle.verticalAlign": {
+        "desc": "文字垂直对齐方式，默认自动",
+        "uiControl": {
+            "type": "enum",
+            "options": "top,middle,bottom"
+        }
+    },
+    "subtextStyle.lineHeight": {
+        "desc": "行高",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "12"
+        }
+    },
+    "subtextStyle.width": {
+        "desc": "文本显示宽度。",
+        "uiControl": {
+            "type": "number",
+            "default": "100",
+            "min": "1",
+            "max": "500",
+            "step": "1"
+        }
+    },
+    "subtextStyle.height": {
+        "desc": "文本显示高度。",
+        "uiControl": {
+            "type": "number",
+            "default": "50",
+            "min": "1",
+            "max": "500",
+            "step": "1"
+        }
+    },
+    "subtextStyle.textBorderColor": {
+        "desc": "文字本身的描边颜色。",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "subtextStyle.textBorderWidth": {
+        "desc": "文字本身的描边宽度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.textBorderType": {
+        "desc": "文字本身的描边类型",
+        "uiControl": {
+            "type": "enum",
+            "default": "solid",
+            "options": "solid,dashed,dotted"
+        }
+    },
+    "subtextStyle.textBorderDashOffset": {
+        "desc": "<blockquote>\n从 <code class=\"codespan\">v5.0.0</code> 开始支持</blockquote>\n用于设置虚线的偏移量，可搭配 \n<code class=\"codespan\">textBorderType</code>\n 指定 dash array 实现灵活的虚线效果",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "0"
+        }
+    },
+    "subtextStyle.textShadowColor": {
+        "desc": "文字本身的阴影颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "#000"
+        }
+    },
+    "subtextStyle.textShadowBlur": {
+        "desc": "文字本身的阴影长度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.textShadowOffsetX": {
+        "desc": "文字本身的阴影 X 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.textShadowOffsetY": {
+        "desc": "文字本身的阴影 Y 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.overflow": {
+        "desc": "文字超出宽度是否截断或者换行",
+        "uiControl": {
+            "type": "enum",
+            "options": "truncate,break,breakAll"
+        }
+    },
+    "subtextStyle.ellipsis": {
+        "desc": "在<code class=\"codespan\">overflow</code>配置为<code class=\"codespan\">&#39;truncate&#39;</code>的时候，可以通过该属性配置末尾显示的文本。"
+    },
+    "subtextStyle.rich": {
+        "desc": "在 <code class=\"codespan\">rich</code> 里面，可以自定义富文本样式"
+    },
+    "subtextStyle.rich.<style_name>.color": {
+        "desc": "文字的颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "null"
+        }
+    },
+    "subtextStyle.rich.<style_name>.fontStyle": {
+        "desc": "文字字体的风格",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,italic,oblique"
+        }
+    },
+    "subtextStyle.rich.<style_name>.fontWeight": {
+        "desc": "文字字体的粗细",
+        "uiControl": {
+            "type": "enum",
+            "default": "normal",
+            "options": "normal,bold,bolder,lighter"
+        }
+    },
+    "subtextStyle.rich.<style_name>.fontFamily": {
+        "desc": "文字的字体系列",
+        "uiControl": {
+            "type": "enum",
+            "default": "sans-serif",
+            "options": "sans-serif,serif,monospace,Arial,Courier New"
+        }
+    },
+    "subtextStyle.rich.<style_name>.fontSize": {
+        "desc": "文字的字体大小。",
+        "uiControl": {
+            "type": "number",
+            "default": "12",
+            "min": "1",
+            "step": "1"
+        }
+    },
+    "subtextStyle.rich.<style_name>.align": {
+        "desc": "文字水平对齐方式，默认自动",
+        "uiControl": {
+            "type": "enum",
+            "options": "left,center,right"
+        }
+    },
+    "subtextStyle.rich.<style_name>.verticalAlign": {
+        "desc": "文字垂直对齐方式，默认自动",
+        "uiControl": {
+            "type": "enum",
+            "options": "top,middle,bottom"
+        }
+    },
+    "subtextStyle.rich.<style_name>.lineHeight": {
+        "desc": "行高",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "12"
+        }
+    },
+    "subtextStyle.rich.<style_name>.backgroundColor": {
+        "desc": "文字块背景色",
+        "uiControl": {
+            "type": "color",
+            "default": "#fff"
+        }
+    },
+    "subtextStyle.rich.<style_name>.borderColor": {
+        "desc": "文字块边框颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "#fff"
+        }
+    },
+    "subtextStyle.rich.<style_name>.borderWidth": {
+        "desc": "文字块边框宽度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.borderType": {
+        "desc": "文字块边框描边类型",
+        "uiControl": {
+            "type": "enum",
+            "default": "solid",
+            "options": "solid,dashed,dotted"
+        }
+    },
+    "subtextStyle.rich.<style_name>.borderDashOffset": {
+        "desc": "<blockquote>\n从 <code class=\"codespan\">v5.0.0</code> 开始支持</p>\n</blockquote>\n用于设置虚线的偏移量，可搭配 \n<code class=\"codespan\">borderType</code>\n 指定 dash array 实现灵活的虚线效果",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "0"
+        }
+    },
+    "subtextStyle.rich.<style_name>.borderRadius": {
+        "desc": "文字块的圆角。",
+        "uiControl": {
+            "type": "vector",
+            "min": "0",
+            "dims": "LT,RT, RB, LB"
+        }
+    },
+    "subtextStyle.rich.<style_name>.padding": {
+        "desc": "文字块的内边距",
+        "uiControl": {
+            "type": "vector",
+            "min": "0",
+            "dims": "T,R,B,L"
+        }
+    },
+    "subtextStyle.rich.<style_name>.shadowColor": {
+        "desc": "文字块的背景阴影颜色。",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "subtextStyle.rich.<style_name>.shadowBlur": {
+        "desc": "文字块的背景阴影长度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.shadowOffsetX": {
+        "desc": "文字块的背景阴影 X 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.shadowOffsetY": {
+        "desc": "文字块的背景阴影 Y 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.width": {
+        "desc": "文字块的宽度"
+    },
+    "subtextStyle.rich.<style_name>.height": {
+        "desc": "文字块的高度"
+    },
+    "subtextStyle.rich.<style_name>.textBorderColor": {
+        "desc": "文字本身的描边颜色。",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textBorderWidth": {
+        "desc": "文字本身的描边宽度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textBorderType": {
+        "desc": "文字本身的描边类型",
+        "uiControl": {
+            "type": "enum",
+            "default": "solid",
+            "options": "solid,dashed,dotted"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textBorderDashOffset": {
+        "desc": "<blockquote>\n从 <code class=\"codespan\">v5.0.0</code> 开始支持</p>\n</blockquote>\n用于设置虚线的偏移量，可搭配 \n<code class=\"codespan\">textBorderType</code>\n 指定 dash array 实现灵活的虚线效果",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "1",
+            "default": "0"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textShadowColor": {
+        "desc": "文字本身的阴影颜色。",
+        "uiControl": {
+            "type": "color",
+            "default": "#000"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textShadowBlur": {
+        "desc": "文字本身的阴影长度。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textShadowOffsetX": {
+        "desc": "文字本身的阴影 X 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "subtextStyle.rich.<style_name>.textShadowOffsetY": {
+        "desc": "文字本身的阴影 Y 偏移。",
+        "uiControl": {
+            "type": "number",
+            "step": "0.5"
+        }
+    },
+    "textAlign": {
+        "desc": "整体（包括 text 和 subtext）的水平对齐",
+        "uiControl": {
+            "type": "enum",
+            "options": "auto,left,center,right",
+            "default": "auto"
+        }
+    },
+    "textVerticalAlign": {
+        "desc": "整体（包括 text 和 subtext）的垂直对齐",
+        "uiControl": {
+            "type": "enum",
+            "options": "auto,top,middle,bottom",
+            "default": "auto"
+        }
+    },
+    "triggerEvent": {
+        "desc": "是否触发事件。"
+    },
+    "padding": {
+        "desc": "标题内边距，单位px，默认各方向内边距为5，接受数组分别设定上右下左边距",
+        "uiControl": {
+            "type": "vector",
+            "min": "0",
+            "dims": "T,R,B,L"
+        }
+    },
+    "itemGap": {
+        "desc": "主副标题之间的间距。",
+        "uiControl": {
+            "type": "number",
+            "min": "0",
+            "default": "10",
+            "step": "1"
+        }
+    },
+    "zlevel": {
+        "desc": "所有图形的 zlevel 值"
+    },
+    "z": {
+        "desc": "组件的所有图形的z值"
+    },
+    "left": {
+        "desc": "title 组件离容器左侧的距离",
+        "uiControl": {
+            "type": "percent",
+            "default": "0%"
+        }
+    },
+    "top": {
+        "desc": "title 组件离容器上侧的距离",
+        "uiControl": {
+            "type": "percent",
+            "default": "0%"
+        }
+    },
+    "right": {
+        "desc": "title 组件离容器右侧的距离",
+        "uiControl": {
+            "type": "percent",
+            "default": "0%"
+        }
+    },
+    "bottom": {
+        "desc": "title 组件离容器下侧的距离",
+        "uiControl": {
+            "type": "percent",
+            "default": "0%"
+        }
+    },
+    "backgroundColor": {
+        "desc": "标题背景色，默认透明",
+        "uiControl": {
+            "type": "color"
+        }
+    },
+    "borderColor": {
+        "desc": "标题的边框颜色",
+        "uiControl": {
+            "type": "color",
+            "default": "#ccc"
+        }
+    },
+    "borderWidth": {
+        "desc": "标题的边框线宽。",
+        "uiControl": {
+            "type": "number",
+            "default": "0",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "borderRadius": {
+        "desc": "圆角半径，单位px，支持传入数组分别指定 4 个圆角半径",
+        "uiControl": {
+            "type": "vector",
+            "min": "0",
+            "dims": "LT,RT,RB,LB"
+        }
+    },
+    "shadowBlur": {
+        "desc": "图形阴影的模糊大小",
+        "uiControl": {
+            "type": "number",
+            "default": "",
+            "min": "0",
+            "step": "0.5"
+        }
+    },
+    "shadowColor": {
+        "desc": "阴影颜色",
+        "uiControl": {
+            "type": "color",
+            "default": ""
+        }
+    },
+    "shadowOffsetX": {
+        "desc": "阴影水平方向上的偏移距离",
+        "uiControl": {
+            "type": "number",
+            "default": "0",
+            "step": "0.5"
+        }
+    },
+    "shadowOffsetY": {
+        "desc": "阴影垂直方向上的偏移距离",
+        "uiControl": {
+            "type": "number",
+            "default": "0",
+            "step": "0.5"
+        }
+    }
+}

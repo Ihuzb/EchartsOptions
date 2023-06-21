@@ -1,7 +1,11 @@
 {
-  "name": "EchartsOptions",
-  "displayName": "EchartsOptions",
-  "description": "",
+  "name": "echartsoptions",
+  "displayName": "Echarts Options",
+  "description": "Echarts配置项图形化工具",
+  "keywords": [
+    "vscode",
+    "echarts"
+  ],
   "version": "0.0.1",
   "publisher": "ihuzb",
   "engines": {
@@ -10,13 +14,37 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+  ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "EchartsOptions.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "echartsoptions.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "index",
+          "title": "Echarts Options",
+          "icon": "image/index.svg"
+        }
+      ]
+    },
+    "views": {
+      "index": [
+        {
+          "id": "general",
+          "name": "通用"
+        },
+        {
+          "id": "examples",
+          "name": "模板示例"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -27,7 +55,7 @@
     "@types/vscode": "^1.79.0",
     "@types/glob": "^8.1.0",
     "@types/mocha": "^10.0.1",
-    "@types/node": "20.2.5",
+    "@types/node": "^16.14.2",
     "eslint": "^8.41.0",
     "glob": "^8.1.0",
     "mocha": "^10.2.0",
